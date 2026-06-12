@@ -188,15 +188,41 @@ def main():
         sys.exit(1)
 
     results = {}
-    _section(f"Executando {len(targets)} scraper(s)")
-    for name in targets:
-        print(f"  ⚙  Iniciando {name}...")
+    
+    if args.scraper:
+        name = args.scraper
+        _section(f"Executando scraper individual: {name}")
         success, elapsed, err = run_scraper(name)
         if success:
             print(f"  ✔  {name} concluído com sucesso ({elapsed:.1f}s)")
         else:
             print(f"  ✖  {name} falhou ({elapsed:.1f}s)")
         results[name] = (success, elapsed, err)
+    else:
+        phase1 = [n for n, i in targets.items() if i["phase"] == 1]
+        phase2 = [n for n, i in targets.items() if i["phase"] == 2]
+        
+        if phase1:
+            _section("Fase 1 - Dados Primários (Insumos e Equipamentos)")
+            for name in phase1:
+                print(f"  ⚙  Iniciando {name}...")
+                success, elapsed, err = run_scraper(name)
+                if success:
+                    print(f"  ✔  {name} concluído com sucesso ({elapsed:.1f}s)")
+                else:
+                    print(f"  ✖  {name} falhou ({elapsed:.1f}s)")
+                results[name] = (success, elapsed, err)
+                
+        if phase2:
+            _section("Fase 2 - Dados Compostos (Composições)")
+            for name in phase2:
+                print(f"  ⚙  Iniciando {name}...")
+                success, elapsed, err = run_scraper(name)
+                if success:
+                    print(f"  ✔  {name} concluído com sucesso ({elapsed:.1f}s)")
+                else:
+                    print(f"  ✖  {name} falhou ({elapsed:.1f}s)")
+                results[name] = (success, elapsed, err)
 
     total_elapsed = time.time() - t0
     

@@ -1,0 +1,53 @@
+name: Coleta e Estruturacao SICRO
+
+on:
+  schedule:
+    # Executa todos os dias às 06:00 UTC (03:00 BRT)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'data/**'
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Requerido para dar push de commits
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Scrapers Pipeline
+        run: |
+          python run_all.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Adiciona apenas os arquivos de dados planos e metadados
+          git add data/
+          
+          # Verifica se existem alterações para commitar
+          if ! git diff --cached --quiet; then
+            git commit -m "auto: update SICRO data [skip ci]"
+            git push origin main
+          else
+            echo "Nenhuma alteração nos dados detectada."
+          fi

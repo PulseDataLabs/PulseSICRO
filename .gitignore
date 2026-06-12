@@ -1,0 +1,11 @@
+.venv/
+data/cache/
+backend/temp_extract_sicro/
+backend/temp_extract_equipamentos/
+backend/temp_extract_composicoes/
+__pycache__/
+scrapers/__pycache__/
+utils/__pycache__/
+.pytest_cache/
+.env
+.env.*

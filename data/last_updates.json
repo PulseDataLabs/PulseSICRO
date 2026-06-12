@@ -2,5 +2,13 @@
   "sicro_insumos.csv": {
     "min": "2026-01",
     "max": "2026-01"
+  },
+  "sicro_equipamentos.csv": {
+    "min": "2026-01",
+    "max": "2026-01"
+  },
+  "sicro_composicoes.csv": {
+    "min": "2026-06-12",
+    "max": "2026-06-12"
   }
 }

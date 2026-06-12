@@ -45,5 +45,139 @@
         "example": "True"
       }
     ]
+  },
+  {
+    "title": "Sicro Equipamentos",
+    "files": "sicro_equipamentos.csv",
+    "source": "sicro",
+    "fields": [
+      {
+        "name": "data_captura",
+        "type": "date",
+        "example": "2026-06-12"
+      },
+      {
+        "name": "codigo_equipamento",
+        "type": "str",
+        "example": "E9001"
+      },
+      {
+        "name": "descricao_equipamento",
+        "type": "str",
+        "example": "Conjunto vibratório para tubos de concreto com encaixe PB e 3 jogos de fôrmas - D = 0,60 m - 2,20 kW"
+      },
+      {
+        "name": "valor_aquisicao",
+        "type": "float",
+        "example": "738123082.0"
+      },
+      {
+        "name": "depreciacao",
+        "type": "str",
+        "example": "98416.0"
+      },
+      {
+        "name": "oportunidade_capital",
+        "type": "str",
+        "example": "15181.0"
+      },
+      {
+        "name": "seguros_impostos",
+        "type": "str",
+        "example": "0.0"
+      },
+      {
+        "name": "manutencao",
+        "type": "str",
+        "example": "73812.0"
+      },
+      {
+        "name": "operacao",
+        "type": "str",
+        "example": "0.0"
+      },
+      {
+        "name": "mao_obra_operacao",
+        "type": "str",
+        "example": "0.0"
+      },
+      {
+        "name": "custo_produtivo",
+        "type": "float",
+        "example": "187409.0"
+      },
+      {
+        "name": "custo_improdutivo",
+        "type": "float",
+        "example": "113597.0"
+      },
+      {
+        "name": "uf",
+        "type": "str",
+        "example": "ES"
+      },
+      {
+        "name": "data_referencia",
+        "type": "date",
+        "example": "2026-01"
+      },
+      {
+        "name": "desonerado",
+        "type": "str",
+        "example": "False"
+      }
+    ]
+  },
+  {
+    "title": "Sicro Composicoes",
+    "files": "sicro_composicoes.csv",
+    "source": "sicro",
+    "fields": [
+      {
+        "name": "data_captura",
+        "type": "date",
+        "example": "2026-06-12"
+      },
+      {
+        "name": "codigo_composicao",
+        "type": "str",
+        "example": "00307731"
+      },
+      {
+        "name": "descricao_composicao",
+        "type": "str",
+        "example": "Aparelho de apoio de neoprene fretado para estruturas moldadas no local - fornecimento e instalação"
+      },
+      {
+        "name": "unidade_composicao",
+        "type": "str",
+        "example": "dm³"
+      },
+      {
+        "name": "codigo_item",
+        "type": "str",
+        "example": "P9821"
+      },
+      {
+        "name": "descricao_item",
+        "type": "str",
+        "example": "Pedreiro"
+      },
+      {
+        "name": "unidade_item",
+        "type": "str",
+        "example": "h"
+      },
+      {
+        "name": "tipo_item",
+        "type": "str",
+        "example": "INSUMO"
+      },
+      {
+        "name": "coeficiente",
+        "type": "float",
+        "example": "1.0"
+      }
+    ]
   }
 ]
