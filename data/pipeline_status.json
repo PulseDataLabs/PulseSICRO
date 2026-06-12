@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-06-12T20:23:25.244402",
+  "elapsed_seconds": 7.0798540115356445,
+  "status": "success",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "failed": 0
+  },
+  "scrapers": {
+    "sicro_insumos": {
+      "status": "success",
+      "elapsed_seconds": 7.079818487167358,
+      "error": null,
+      "timestamp": "2026-06-12T20:23:25.244472"
+    }
+  }
+}

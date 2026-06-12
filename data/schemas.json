@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Sicro Insumos",
+    "files": "sicro_insumos.csv",
+    "source": "sicro",
+    "fields": [
+      {
+        "name": "data_captura",
+        "type": "date",
+        "example": "2026-06-12"
+      },
+      {
+        "name": "codigo_insumo",
+        "type": "str",
+        "example": "I001"
+      },
+      {
+        "name": "descricao_insumo",
+        "type": "str",
+        "example": "Cimento Portland CP III-40"
+      },
+      {
+        "name": "unidade",
+        "type": "str",
+        "example": "t"
+      },
+      {
+        "name": "preco_mediano",
+        "type": "float",
+        "example": "740.0"
+      },
+      {
+        "name": "uf",
+        "type": "str",
+        "example": "ES"
+      },
+      {
+        "name": "data_referencia",
+        "type": "date",
+        "example": "2026-01"
+      },
+      {
+        "name": "desonerado",
+        "type": "str",
+        "example": "True"
+      }
+    ]
+  }
+]

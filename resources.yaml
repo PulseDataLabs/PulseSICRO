@@ -1,0 +1,8 @@
+resources:
+  ##############################################################################
+  # Relatórios Mensais SICRO (DNIT)
+  ##############################################################################
+  - name: SICRO - Relatórios Mensais
+    url_template: 'https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/{regiao}/{estado}/{ano}/{mes_nome}/{uf_lower}-{mes_num}-{ano}.7z'
+    type_response: 7z
+    acumular: true

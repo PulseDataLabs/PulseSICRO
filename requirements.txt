@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+python-dotenv
+xlrd
+rich
+openpyxl
+PyYAML
+pandas
+py7zr
