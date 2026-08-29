@@ -54,7 +54,7 @@
       {
         "name": "data_captura",
         "type": "date",
-        "example": "2026-08-28"
+        "example": "2026-08-29"
       },
       {
         "name": "codigo_equipamento",
@@ -136,7 +136,7 @@
       {
         "name": "data_captura",
         "type": "date",
-        "example": "2026-08-28"
+        "example": "2026-08-29"
       },
       {
         "name": "codigo_composicao",
