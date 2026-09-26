@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-25T11:31:02.218481",
-  "elapsed_seconds": 69.3493299484253,
+  "timestamp": "2026-09-26T11:05:24.838728",
+  "elapsed_seconds": 45.69107270240784,
   "status": "success",
   "summary": {
     "total": 3,
@@ -10,21 +10,21 @@
   "scrapers": {
     "sicro_insumos": {
       "status": "success",
-      "elapsed_seconds": 37.93701910972595,
+      "elapsed_seconds": 14.868961334228516,
       "error": null,
-      "timestamp": "2026-09-25T11:31:02.218589"
+      "timestamp": "2026-09-26T11:05:24.838813"
     },
     "sicro_equipamentos": {
       "status": "success",
-      "elapsed_seconds": 2.316251516342163,
+      "elapsed_seconds": 2.371215581893921,
       "error": null,
-      "timestamp": "2026-09-25T11:31:02.218589"
+      "timestamp": "2026-09-26T11:05:24.838813"
     },
     "sicro_composicoes": {
       "status": "success",
-      "elapsed_seconds": 29.096006155014038,
+      "elapsed_seconds": 28.450844526290894,
       "error": null,
-      "timestamp": "2026-09-25T11:31:02.218589"
+      "timestamp": "2026-09-26T11:05:24.838813"
     }
   }
 }
